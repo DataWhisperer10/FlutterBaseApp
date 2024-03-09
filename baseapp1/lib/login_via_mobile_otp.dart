@@ -31,8 +31,8 @@ class _LoginViaMobileOtpState extends State<LoginViaMobileOtp> {
                     'https://img.freepik.com/free-vector/login-concept-illustration_114360-757.jpg?w=740&t=st=1709715646~exp=1709716246~hmac=f2f8d57bb0f480caf04a2d6eaaae396595dfa19cf1f9e4d57ec8f1538b0d20d8'),
               ),
               Container(
-                child: Center(
-                  child: const Text(
+                child: const Center(
+                  child: Text(
                     'Enter Mobile Number',
                     style: TextStyle(fontWeight: FontWeight.bold),
                   ),
@@ -65,12 +65,12 @@ class _LoginViaMobileOtpState extends State<LoginViaMobileOtp> {
                 onTap: () {
                   Navigator.of(context).pushAndRemoveUntil(
                       MaterialPageRoute(builder: (context) {
-                    return RoomScreen2();
+                    return const RoomScreen2();
                   }), (p) => false);
                 },
                 child: Container(
-                  child: Center(
-                    child: const Text(
+                  child: const Center(
+                    child: Text(
                       'Submit',
                       style: TextStyle(fontWeight: FontWeight.bold),
                     ),
