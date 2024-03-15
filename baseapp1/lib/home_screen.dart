@@ -2,7 +2,7 @@ import 'package:baseapp1/home_drawer.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatefulWidget {
-  const HomeScreen({super.key});
+  const HomeScreen({super.key, required String imageUrl});
 
   @override
   State<HomeScreen> createState() => _HomeScreenState();

@@ -13,7 +13,9 @@ class RoomScreen1 extends StatefulWidget {
 class _RoomScreen1State extends State<RoomScreen1> {
   int selectedIndex = 0;
   static const List<Widget> screens = [
-    HomeScreen(),
+    HomeScreen(
+      imageUrl: '',
+    ),
     FavoriteScreen(),
     SearchScreen(),
   ];
