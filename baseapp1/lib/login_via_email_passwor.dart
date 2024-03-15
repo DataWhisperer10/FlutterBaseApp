@@ -1,6 +1,5 @@
 import 'package:baseapp1/room_screen1.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 class LoginViaEmailPassword extends StatefulWidget {
   const LoginViaEmailPassword({super.key});
@@ -26,35 +25,35 @@ class _LoginViaEmailPasswordState extends State<LoginViaEmailPassword> {
           child: Column(
             children: [
               const Image(
+                  height: 200,
+                  width: double.infinity,
                   image: NetworkImage(
                       'https://img.freepik.com/free-vector/login-concept-illustration_114360-757.jpg?w=740&t=st=1709715646~exp=1709716246~hmac=f2f8d57bb0f480caf04a2d6eaaae396595dfa19cf1f9e4d57ec8f1538b0d20d8')),
               Container(
-                child: Center(
-                  child: const Text(
-                    'Enter Your Email Id',
-                    style: TextStyle(
-                        fontWeight: FontWeight.bold, color: Colors.white),
+                height: 50,
+                width: double.infinity,
+                margin: EdgeInsets.all(15),
+                child: const Center(
+                  child: TextField(
+                    decoration: InputDecoration(
+                        border: OutlineInputBorder(),
+                        hintText: 'Enter Your Email Here',
+                        hintStyle: TextStyle(color: Colors.black)),
                   ),
                 ),
-                margin: EdgeInsets.all(10),
-                height: 50,
-                width: width / 1.5,
-                decoration: BoxDecoration(color: Colors.lightBlue),
               ),
               Container(
-                child: Container(
-                  child: Center(
-                    child: Text(
-                      'Enter Your Password',
-                      style: TextStyle(
-                          fontWeight: FontWeight.bold, color: Colors.white),
-                    ),
+                height: 50,
+                width: double.infinity,
+                margin: EdgeInsets.all(15),
+                child: const Center(
+                  child: TextField(
+                    decoration: InputDecoration(
+                        border: OutlineInputBorder(),
+                        hintText: 'Enter Your Password',
+                        hintStyle: TextStyle(color: Colors.black)),
                   ),
                 ),
-                height: 50,
-                width: width / 1.5,
-                margin: EdgeInsets.all(10),
-                decoration: BoxDecoration(color: Colors.lightBlue),
               ),
               InkWell(
                 onTap: () {
